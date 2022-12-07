@@ -1,0 +1,64 @@
+Arguments: 
+  /Users/davidhouse/.nvm/versions/node/v18.12.1/bin/node /Users/davidhouse/.nvm/versions/node/v18.12.1/bin/yarn add @react-aria
+
+PATH: 
+  /Users/davidhouse/.nvm/versions/node/v18.12.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/davidhouse/.cargo/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@react-aria: Request "https://registry.yarnpkg.com/@react-aria" returned a 405
+      at params.callback [as _callback] (/Users/davidhouse/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:66154:18)
+      at self.callback (/Users/davidhouse/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/Users/davidhouse/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/Users/davidhouse/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "private": true,
+    "sideEffects": false,
+    "scripts": {
+      "build": "remix build",
+      "dev": "remix dev",
+      "start": "remix-serve build",
+      "typecheck": "tsc -b"
+    },
+    "dependencies": {
+      "@remix-run/node": "^1.8.1",
+      "@remix-run/react": "^1.8.1",
+      "@remix-run/serve": "^1.8.1",
+      "isbot": "^3.6.5",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+      "@remix-run/dev": "^1.8.1",
+      "@remix-run/eslint-config": "^1.8.1",
+      "@types/react": "^18.0.25",
+      "@types/react-dom": "^18.0.8",
+      "eslint": "^8.27.0",
+      "typescript": "^4.8.4"
+    },
+    "engines": {
+      "node": ">=14"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
