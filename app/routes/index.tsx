@@ -2,6 +2,7 @@ import React from "react";
 import { FocusScope } from "react-aria";
 
 export default function Index() {
+  // Example from: https://react-spectrum.adobe.com/react-aria/FocusScope.html
   let [isOpen, setOpen] = React.useState(false);
   return (
     <>

@@ -4,6 +4,7 @@ import { Response } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import isbot from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
+import { SSRProvider } from "react-aria";
 
 const ABORT_DELAY = 5000;
 
@@ -38,7 +39,9 @@ function handleBotRequest(
     let didError = false;
 
     const { pipe, abort } = renderToPipeableStream(
-      <RemixServer context={remixContext} url={request.url} />,
+      <SSRProvider>
+        <RemixServer context={remixContext} url={request.url} />
+      </SSRProvider>,
       {
         onAllReady() {
           const body = new PassThrough();
